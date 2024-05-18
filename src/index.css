@@ -1,0 +1,223 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap");
+:root {
+  --main-color: #0aad0a;
+  --light-color: #f0f3f2;
+  --shadow: rgba(145, 158, 171, 0.2) 0px 2px 4px -1px,
+    rgba(145, 158, 171, 0.14) 0px 4px 5px 0px,
+    rgba(145, 158, 171, 0.12) 0px 1px 10px 0px;
+  --font-family: "Encode Sans Expanded", sans-serif;
+  --rating-color: #ffc908;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family) !important;
+}
+.rating-color {
+  color: var(--rating-color);
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+a,
+a:hover {
+  color: black !important;
+  text-decoration: none !important;
+}
+.a,
+a:hover {
+  color: black !important;
+  text-decoration: none !important;
+}
+
+.product:hover {
+  box-shadow: var(--shadow);
+  border: solid 1px var(--main-color);
+}
+.product .btn {
+  transition: transform 0.5s, opacity 0.5s;
+  transform: translateY(100%);
+  opacity: 0;
+}
+.product:hover .btn {
+  opacity: 1;
+  transform: translateY(0%);
+}
+.font-sm {
+  font-size: 14px;
+}
+.text-main {
+  color: var(--main-color) !important;
+}
+.text-main-light {
+  color: var(--light-color) !important;
+}
+.bg-main {
+  background-color: var(--main-color) !important;
+}
+.bg-main-light {
+  background-color: var(--light-color) !important;
+}
+.bg-asset {
+  background-image: url("./Assets/images/light-patten.svg");
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+i {
+  cursor: pointer;
+  font-size: 20px;
+}
+.nav-item i:nth-child(1) {
+  color: #1877f2;
+}
+.nav-item i:nth-child(2) {
+  color: #bc2a8d;
+}
+.nav-item i:nth-child(3) {
+  color: #2aa7df;
+}
+.nav-item i:nth-child(4) {
+  color: black;
+}
+.nav-item i:nth-child(5) {
+  color: #ff0000;
+}
+
+.fit-content {
+  width: fit-content;
+}
+.navbar-nav .nav-link.active {
+  color: white !important;
+  font-weight: bold;
+  background-color: #0aad0a;
+  border-radius: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.navbar-nav .nav-item {
+  width: fit-content;
+}
+.navbar-nav .nav-link {
+  transition: 0.3s;
+}
+.navbar-nav .nav-link:not(.active):hover {
+  color: var(--main-color) !important;
+}
+
+.category {
+  column-count: 4;
+}
+.category-son {
+  border-radius: 6px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.category-son-style {
+  align-items: center;
+  background-color: #0009;
+  color: #fff;
+  display: flex;
+  font-size: 25px;
+  font-weight: 600;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  top: 100%;
+  transition: 0.3s;
+  width: 100%;
+}
+.category-son:hover .category-son-style {
+  top: 0;
+}
+.category-son:hover img {
+  scale: 1.2;
+}
+.category-son img {
+  transition: 0.3s;
+}
+.sub-Category {
+  transition: 0.2s box-shadow ease-in-out;
+  border: 1px solid rgb(216, 216, 216);
+  border-radius: 6px;
+  text-align: center;
+  padding: 18px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.sub-Category:hover {
+  box-shadow: 0 0 10px var(--main-color);
+}
+.border-main {
+  border: 1px solid var(--main-color) !important;
+  transition: 0.3s;
+}
+.border-main:hover {
+  background-color: var(--main-color) !important;
+  color: #fff !important;
+}
+
+.brands {
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.brands:hover {
+  box-shadow: 0 0 10px var(--main-color);
+}
+.info {
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.info:hover {
+  box-shadow: 0 0 10px var(--main-color);
+}
+.linkItem {
+  transition: 0.3s;
+}
+.linkItem:hover {
+  color: var(--main-color) !important;
+}
+.fa-box{
+  font-size: 150px;
+ color : var(--main-color);
+}
+.order:hover {
+  transform: scale(1.05);
+}
+.order {
+  transition: transform 0.5s;
+}
+.cart-img {
+  width: 10%;
+}
+
+.offline{
+  position:fixed;
+  right:30px;
+  bottom:30px;
+  padding: 5px 30px;
+  background-color: rgba(0,0,0,0.8);
+  color:white;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  font-size: 14px;
+}
+
+
+/*  ScrollBar  */
+
+::-webkit-scrollbar {
+  width: 13px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--light-color);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 15px;
+}
